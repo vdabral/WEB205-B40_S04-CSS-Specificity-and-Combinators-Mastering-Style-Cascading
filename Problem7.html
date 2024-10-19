@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Cards with Hover Effect</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: #2f1422;
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Arial', sans-serif;
+            text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f, 0 0 20px purple;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 80%;
+        }
+
+        .card {
+            width: 100px;
+            height: 150px;
+            border-radius: 10px;
+            margin: 10px;
+            transition: opacity 0.3s ease;
+        }
+        .card:nth-child(1) {
+            background-color: yellow;
+            box-shadow: 0 0 20px yellow, 0 0 0px yellow;
+        }
+
+        .card:nth-child(2) {
+            background-color: lavender;
+            box-shadow: 0 0 20px lavender, 0 0 0px lavender;
+        }
+
+        .card:nth-child(3) {
+            background-color: red;
+            box-shadow: 0 0 20px red, 0 0 0px red;
+        }
+
+        .card:nth-child(4) {
+            background-color: green;
+            box-shadow: 0 0 20px green, 0 0 0px green;
+        }
+        .container:hover .card:not(:hover) {
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+    <h1>CARDS</h1>
+    <div class="container">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai School</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white; /* Set background to white */
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        /* Left logo */
+        .left img {
+            width: 100px; /* Resize the logo */
+        }
+
+        /* Center navigation links */
+        .center a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1em;
+            color: #333;
+            padding: 5px;
+            position: relative;
+        }
+
+        /* Hover effect for nav links */
+        .center a:hover, 
+        .center a.active {
+            color: #ff5656; /* Red color for active/hovered links */
+        }
+
+        /* Add a highlight background for active link */
+        .center a.active {
+            background-color: #ffe5e5; /* Light red background */
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+
+        /* Right section buttons */
+        .right .btn {
+            margin-left: 10px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1em;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        /* Refer & Earn button */
+        .right .refer-btn {
+            background-color: #e5f6ff; /* Light blue background */
+            color: #0056b3; /* Blue text */
+        }
+
+        /* Sign Up button */
+        .right .signup-btn {
+            background-color: white;
+            color: #ff5656;
+            border: 2px solid #ff5656; /* Red border */
+        }
+
+        /* Hover effect for buttons */
+        .right .btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Main content */
+        main {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: left;
+            padding: 40px 20px;
+        }
+
+        .main-content {
+            max-width: 50%;
+        }
+
+        .main-content h1 {
+            color: #6c5ce7; /* Purple color */
+            font-size: 2.5em;
+        }
+
+        .main-content p {
+            color: #333;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .apply-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            background-color: #ff5656;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .apply-btn:hover {
+            background-color: #e04c4c;
+        }
+
+        iframe {
+            width: 560px;
+            height: 315px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .content div {
+            width: 200px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <a href="https://www.masaischool.com/">
+                <img src="https://cdn.masaischool.com/masai-website/Masai_Logo_dark_web_b21aab8c62.webp" alt="Masai School Logo">
+            </a>
+        </div>
+        <div class="center">
+            <a href="#">Courses</a>
+            <a href="#">Fees</a>
+            <a href="#">Events</a>
+            <a href="#">Learn</a>
+            <a href="#" class="active">Success Stories</a> <!-- Marking Success Stories as active -->
+            <a href="#">Hire from Us</a>
+        </div>
+        <div class="right">
+            <button class="btn refer-btn">REFER & EARN</button>
+            <button class="btn signup-btn">SIGN UP</button>
+        </div>
+    </nav>
+    <main>
+        <div class="main-content">
+            <h1>Proof that dreams do come true</h1>
+            <p>A testament to what's possible</p>
+            <button class="apply-btn">Apply Now</button>
+        </div>
+        <iframe src="https://www.youtube-nocookie.com/embed/0867JeIfyLY?si=xh5SYj9uCoVVvcsQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </main>
+    <div class="content">
+        <div>
+            <h2>How is Masai Creating an Impact?</h2>
+            <p>6000+ students placed across 5000+ companies</p>
+        </div>
+        <div>
+            <h2>5000+</h2>
+            <p>Hiring Partners</p>
+        </div>
+        <div>
+            <h2>6.1 LPA*</h2>
+            <p>Average CTC</p>
+        </div>
+        <div>
+            <h2>8000+</h2>
+            <p>Currently Enrolled Students</p>
+        </div>
+    </div>
+</body>
+</html>
